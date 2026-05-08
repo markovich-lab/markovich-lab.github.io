@@ -5,7 +5,7 @@ publishDate: "08 May 2026"
 tags: ["workshop", "teaching", "PEST++", "groundwater modeling"]
 ---
 
-Katie will be co-teaching a one-day short course at [Groundwater Modeling & More (GWM$^2$)](https://igwmc.princeton.edu/groundwater-modeling-and-more/) in Princeton, NJ on **June 7, 2026**.
+Katie will be co-teaching a one-day short course at [Groundwater Modeling & More (GWM<sup>2</sup>)](https://igwmc.princeton.edu/groundwater-modeling-and-more/) in Princeton, NJ on **June 7, 2026**.
 
 **An Introduction to Predictive Modeling Workflows with Python, pyEMU, and PEST++**
 
@@ -18,4 +18,4 @@ This course shifts focus from model input development to actionable modeling out
 
 Co-instructors: Mike Fienen (USGS) and Jeremy White (INTERA Inc.)
 
-Registration is open at the [GWM$^2$ short courses page](https://igwmc.princeton.edu/groundwater-modeling-and-more/short-courses-more/#An-Introduction-to-Predictive-Modeling-Workflows). Basic Python and groundwater modeling familiarity recommended.
+Registration is open at the [GWM<sup>2</sup> short courses page](https://igwmc.princeton.edu/groundwater-modeling-and-more/short-courses-more/#An-Introduction-to-Predictive-Modeling-Workflows). Basic Python and groundwater modeling familiarity recommended.
