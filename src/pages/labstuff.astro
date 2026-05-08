@@ -1,0 +1,21 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+    title: "Lab Resources",
+    description: "Resources for Markovich Lab members",
+};
+---
+<PageLayout meta={meta}>
+    <h2 class="text-2xl font-semibold mb-6">Lab Resources</h2>
+
+    <ul class="flex flex-col gap-4">
+        <li class="bg-card rounded-lg shadow-sm p-5 flex items-center justify-between">
+            <div>
+                <h3 class="font-semibold text-lg">Lab Policies & Expectations</h3>
+                <p class="text-sm text-muted mt-1">Guidelines, expectations, and policies for lab members.</p>
+            </div>
+            <span class="text-xs text-muted italic ml-6 flex-shrink-0">Coming soon</span>
+        </li>
+    </ul>
+</PageLayout>

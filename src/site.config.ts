@@ -41,22 +41,22 @@ export const menuLinks: { path: string; title: string }[] = [
 		title: "Team",
 	},
 	{
-		path: "/posts/",
-		title: "Blog",
-	},
-	{
 		path: "/research/",
 		title: "Research",
+	},
+	{
+		path: "/teachingetc/",
+		title: "Teaching",
+	},
+	{
+		path: "/posts/",
+		title: "Blog",
 	},
 	{
 		path: "/opportunities/",
 		title: "Opportunities",
 	},
 	{
-		path: "/teachingetc/",
-		title: "Teaching",
-	},
-		{
 		path: "/labstuff/",
 		title: "Resources", //put expectations, policies, and other resources here
 	},
