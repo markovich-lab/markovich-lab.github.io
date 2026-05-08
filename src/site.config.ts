@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	*/
 	title: "Markovich Groundwater Sustainability Lab",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "http://markovichlab.org",
+	url: "https://markovichlab.org",
 };
 
 // Used to generate links in both the Header & Footer.
