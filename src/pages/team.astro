@@ -28,7 +28,8 @@ const team = [
 		name: "Elizabeth Lindsey",
 		role: "MS Student · Starting Fall 2026",
 		bio: "",
-		img: "",
+		img: "/images/Ellie_Sandias.jpg",
+		email: "elindsey1@unm.edu",
 	},
 ];
 ---
@@ -36,7 +37,8 @@ const team = [
 <PageLayout meta={meta}>
 	<h1 class="title mb-4">Team</h1>
 	<p class="text-muted mb-8">
-		Our lab works on groundwater sustainability, decision support modeling, and water resources policy-relevant science.
+		Our lab works on groundwater sustainability, decision support modeling, and water resources
+		policy-relevant science.
 	</p>
 
 	<div class="mx-auto max-w-4xl px-4">
@@ -44,7 +46,15 @@ const team = [
 			{
 				team.map((m) => (
 					<li class="bg-card flex items-start gap-6 rounded-lg p-6 shadow-sm">
-						{m.img ? <img src={m.img} alt={m.name} class="h-36 w-36 flex-shrink-0 rounded-md object-cover" /> : <div class="h-36 w-36 flex-shrink-0 rounded-md bg-gray-200 dark:bg-gray-700" />}
+						{m.img ? (
+							<img
+								src={m.img}
+								alt={m.name}
+								class="h-36 w-36 flex-shrink-0 rounded-md object-cover"
+							/>
+						) : (
+							<div class="h-36 w-36 flex-shrink-0 rounded-md bg-gray-200 dark:bg-gray-700" />
+						)}
 
 						<div class="min-w-0 flex-1">
 							<h3 class="text-xl leading-tight font-semibold">{m.name}</h3>
