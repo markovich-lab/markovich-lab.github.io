@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="827" height="1227" viewBox="0 0 827 1227" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="827" height="1227" viewBox="0 0 827 1227" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
     <g transform="matrix(1,0,0,1,-1183.778001,-1867.072367)">
         <g transform="matrix(0.804253,0,0,0.804253,328.053254,503.864242)">
             <path d="M1162,2400L1364.164,2023L1578,1695L1818.001,2083L1993,2400L2076,2616L1973,2757L1258,2717L1076,2648L1162,2400Z" style="fill:rgb(147,111,67);"/>
@@ -12,12 +10,11 @@
             <path d="M1286,1917C1286,1917 1800,2624.7 1800,2928C1800,3211.684 1569.684,3442 1286,3442C1002.316,3442 772,3211.684 772,2928C772,2624.7 1286,1917 1286,1917ZM1286,2006.787C1208.677,2118.098 1041.313,2367.84 929.653,2598.447C868.939,2723.839 823.808,2842.699 823.808,2928C823.808,3183.091 1030.909,3390.192 1286,3390.192C1541.091,3390.192 1748.192,3183.091 1748.192,2928C1748.192,2842.699 1703.061,2723.839 1642.347,2598.447C1530.687,2367.84 1363.323,2118.098 1286,2006.787Z"/>
         </g>
         <g transform="matrix(-1.036055,-0,0,-1.323649,3233.612232,5845.540874)">
+            <path d="M1579.5,2459L1665,2575L1494,2575L1579.5,2459Z" style="fill:rgb(178,12,45);"/>
             <path d="M1579.5,2459L1665,2575L1494,2575L1579.5,2459ZM1579.5,2493.646L1532.297,2557.687L1626.703,2557.687L1579.5,2493.646Z" style="fill:rgb(178,12,45);"/>
         </g>
-        <g transform="matrix(1,0,0,1,-20.836172,-111)">
-            <g transform="matrix(400,0,0,400,1801.6,2835)">
-            </g>
-            <text x="1434px" y="2835px" style="font-family:'STHeitiTC-Medium', 'Heiti TC';font-size:400px;fill:white;stroke:white;stroke-width:4.17px;">M</text>
+        <g transform="matrix(1,0,0,1,4,0)">
+            <path d="M1475,2752.378L1479,2437.144L1594.349,2630L1707,2437.144L1716,2752.378" style="fill:none;stroke:black;stroke-width:27.08px;"/>
         </g>
     </g>
 </svg>

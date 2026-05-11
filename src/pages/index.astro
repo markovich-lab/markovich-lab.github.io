@@ -11,28 +11,41 @@ const allPosts = await getAllPosts();
 const allPostsByDate = allPosts.sort(collectionDateSort) as CollectionEntry<"post">[];
 const latestPosts = allPostsByDate.slice(0, MAX_POSTS);
 ---
+
 <PageLayout meta={{ title: "Home" }}>
-    <section>
+	<section>
+		<!-- Hero image: put your image at public/images/hero.png -->
+		<img src="/images/hero.png" alt="Lab hero" class="mb-6 w-full max-w-3xl rounded-md" />
 
-        <!-- Hero image: put your image at public/images/hero.png -->
-        <img src="/images/hero.png" alt="Lab hero" class="rounded-md mb-6 w-full max-w-3xl" />
+		<p class="mb-4">
+			Hello! Welcome to the webpage for the Markovich Groundwater Sustainability lab. This site is
+			very much a work in progress and is a team effort.
+		</p>
+	</section>
 
-        <p class="mb-4">
-            Hello! Welcome to the webpage for the Markovich Groundwater Sustainability lab. 
-			This site is very much a work in progress and is a team effort. 
-        </p>
-    </section>
+	<section class="mt-16">
+		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
+		<ul class="space-y-4" role="list">
+			{
+				latestPosts.map((p) => (
+					<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
 
-    <section class="mt-16">
-        <h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
-        <ul class="space-y-4" role="list">
-            {
-                latestPosts.map((p) => (
-                    <li class="grid gap-1 sm:grid-cols-[auto_1fr]">
-                        <PostPreview post={p} />
-                    </li>
-                ))
-            }
-        </ul>
-    </section>
+	<section class="border-accent text-muted mt-12 border-l-4 pl-4 text-sm italic">
+		<p>
+			<strong class="text-global-text not-italic"
+				>Indigenous Peoples' Land and Territory Acknowledgement</strong
+			> — [Founded in 1889, the University of New Mexico sits on the traditional homelands of the Pueblo
+			of Sandia. The original peoples of New Mexico - Pueblo, Navajo, and Apache since time immemorial-
+			have deep connections to the land and have made significant contributions to the broader community
+			statewide. We honor the land itself and those who remain stewards of this land throughout the generations
+			and also acknowledge our committed relationship to Indigenous peoples. We gratefully recognize our
+			history.]
+		</p>
+	</section>
 </PageLayout>
