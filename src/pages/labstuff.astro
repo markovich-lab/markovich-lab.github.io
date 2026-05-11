@@ -2,31 +2,48 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-    title: "Lab Resources",
-    description: "Resources for Markovich Lab members",
+	title: "Lab Resources",
+	description: "Resources for Markovich Lab members",
 };
 ---
-<PageLayout meta={meta}>
-    <h2 class="text-2xl font-semibold mb-6">Lab Resources</h2>
 
-    <ul class="flex flex-col gap-4">
-        <li class="bg-card rounded-lg shadow-sm p-5 flex items-center justify-between">
-            <div>
-                <h3 class="font-semibold text-lg">Lab Policies & Expectations</h3>
-                <p class="text-sm text-muted mt-1">Guidelines, expectations, and policies for lab members.</p>
-            </div>
-            <a href="https://markovichlab.org/lab-manual/" target="_blank" rel="noreferrer" class="ml-6 flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-white bg-accent px-3 py-1.5 rounded hover:opacity-90">
-                View
-            </a>
-        </li>
-        <li class="bg-card rounded-lg shadow-sm p-5 flex items-center justify-between">
-            <div>
-                <h3 class="font-semibold text-lg">About this site</h3>
-                <p class="text-sm text-muted mt-1">
-                    Built on the <a href="https://github.com/chrismwilliams/astro-theme-cactus" target="_blank" rel="noreferrer" class="text-accent hover:underline">Astro Theme Cactus</a> template by Chris Williams.
-                    Source code for this site is available at the <a href="https://github.com/markovich-lab/markovich-lab.github.io.git" target="_blank" rel="noreferrer" class="text-accent hover:underline">Markovich Lab GitHub repo</a>.
-                </p>
-            </div>
-        </li>
-    </ul>
+<PageLayout meta={meta}>
+	<h2 class="mb-6 text-2xl font-semibold">Lab Resources</h2>
+
+	<ul class="flex flex-col gap-4">
+		<li class="bg-card flex items-center justify-between rounded-lg p-5 shadow-sm">
+			<div>
+				<h3 class="text-lg font-semibold">Lab Policies & Expectations</h3>
+				<p class="text-muted mt-1 text-sm">
+					Guidelines, expectations, and policies for lab members.
+				</p>
+			</div>
+			<a
+				href="https://markovich-lab.github.io/lab-manual"
+				target="_blank"
+				rel="noreferrer"
+				class="bg-accent ml-6 inline-flex flex-shrink-0 items-center gap-1.5 rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
+			>
+				View
+			</a>
+		</li>
+		<li class="bg-card flex items-center justify-between rounded-lg p-5 shadow-sm">
+			<div>
+				<h3 class="text-lg font-semibold">About this site</h3>
+				<p class="text-muted mt-1 text-sm">
+					Built on the <a
+						href="https://github.com/chrismwilliams/astro-theme-cactus"
+						target="_blank"
+						rel="noreferrer"
+						class="text-accent hover:underline">Astro Theme Cactus</a
+					> template by Chris Williams. Source code for this site is available at the <a
+						href="https://github.com/markovich-lab/markovich-lab.github.io.git"
+						target="_blank"
+						rel="noreferrer"
+						class="text-accent hover:underline">Markovich Lab GitHub repo</a
+					>.
+				</p>
+			</div>
+		</li>
+	</ul>
 </PageLayout>
