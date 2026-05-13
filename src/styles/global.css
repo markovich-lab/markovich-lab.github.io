@@ -14,7 +14,7 @@
 	--color-accent: #ba0c2f;
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: #007a86;
-	--default-font-family: 'Source Sans 3', system-ui, sans-serif;
+	--font-sans: 'Source Sans 3', system-ui, sans-serif;
 }
 
 @layer base {
