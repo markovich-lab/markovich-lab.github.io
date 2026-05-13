@@ -20,6 +20,7 @@
 	html {
 		color-scheme: light dark;
 		accent-color: var(--color-accent);
+		font-family: 'Source Sans 3', system-ui, sans-serif;
 		scrollbar-gutter: stable;
 
 		&[data-theme="light"] {
@@ -35,6 +36,10 @@
 			--color-accent-2: oklch(94.66% 0 0);
 			--color-quote: #2ab8c5;
 		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
 
 	:target {
