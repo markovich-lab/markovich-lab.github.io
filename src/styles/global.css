@@ -14,8 +14,6 @@
 	--color-accent: #ba0c2f;
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: #007a86;
-	--font-sans: 'Lato', system-ui, sans-serif;
-	--default-font-family: 'Lato', system-ui, sans-serif;
 }
 
 @layer base {
@@ -39,13 +37,6 @@
 		}
 	}
 
-	body {
-		font-family: 'Lato', system-ui, sans-serif;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Cabin', system-ui, sans-serif;
-	}
 
 	:target {
 		scroll-margin-block: 5ex;
