@@ -14,8 +14,8 @@
 	--color-accent: #ba0c2f;
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: #007a86;
-	--font-sans: 'Source Sans 3', system-ui, sans-serif;
-	--default-font-family: 'Source Sans 3', system-ui, sans-serif;
+	--font-sans: 'Lora', Georgia, serif;
+	--default-font-family: 'Lora', Georgia, serif;
 }
 
 @layer base {
@@ -40,7 +40,7 @@
 	}
 
 	body {
-		font-family: 'Source Sans 3', system-ui, sans-serif;
+		font-family: 'Lora', Georgia, serif;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
