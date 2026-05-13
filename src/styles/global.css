@@ -14,8 +14,8 @@
 	--color-accent: #ba0c2f;
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: #007a86;
-	--font-sans: 'Lora', Georgia, serif;
-	--default-font-family: 'Lora', Georgia, serif;
+	--font-sans: 'Lato', system-ui, sans-serif;
+	--default-font-family: 'Lato', system-ui, sans-serif;
 }
 
 @layer base {
@@ -40,11 +40,11 @@
 	}
 
 	body {
-		font-family: 'Lora', Georgia, serif;
+		font-family: 'Lato', system-ui, sans-serif;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-family: 'Cabin', system-ui, sans-serif;
 	}
 
 	:target {
