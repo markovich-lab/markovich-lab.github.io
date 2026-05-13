@@ -14,13 +14,13 @@
 	--color-accent: #ba0c2f;
 	--color-accent-2: oklch(18.15% 0 0);
 	--color-quote: #007a86;
+	--default-font-family: 'Source Sans 3', system-ui, sans-serif;
 }
 
 @layer base {
 	html {
 		color-scheme: light dark;
 		accent-color: var(--color-accent);
-		font-family: 'Source Sans 3', system-ui, sans-serif;
 		scrollbar-gutter: stable;
 
 		&[data-theme="light"] {
