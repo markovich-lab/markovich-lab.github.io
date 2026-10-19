@@ -25,3 +25,4 @@ pnpm-debug.log*
 .astro
 # local-only internal notes (never deployed or committed)
 internal/
+CLAUDE.md

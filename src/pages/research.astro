@@ -29,6 +29,143 @@ const projects = [
 		images: [{ src: "/images/hpcc_fire.jpg", alt: "Hermits Peak/Calf Canyon burn scar" }],
 	},
 ];
+const scholarUrl = "https://scholar.google.com/citations?user=DR6_ChQAAAAJ&hl=en";
+
+// Lab PI name variants, bolded in author lists
+const labAuthors = ["Katherine H. Markovich", "Katherine Markovich", "Katie Markovich"];
+
+// Newest first. Add new papers to the top.
+const publications = [
+	{
+		year: 2026,
+		title:
+			"Multi-Objective Optimization of a Hydro-Economic Model in an Over-Allocated Agricultural Basin",
+		authors:
+			"Katherine H. Markovich, Michael N. Fienen, Nicholas Corson-Dosch, Cecile Coulon, Jeremy T. White, Stephen B. Gingerich",
+		venue: "Groundwater, 64(3), 278–294",
+		doi: "10.1111/gwat.70051",
+	},
+	{
+		year: 2026,
+		title:
+			"Ensemble Methods for History Matching and Uncertainty Quantification With a Watershed Model",
+		authors:
+			"Michael N. Fienen, Andrew J. Long, Katherine H. Markovich, Adel E. Haj, Matthew I. Barker",
+		venue: "JAWRA Journal of the American Water Resources Association, 62(1), e70086",
+		doi: "10.1111/1752-1688.70086",
+	},
+	{
+		year: 2026,
+		title:
+			"Providing guidance for remediation planning through probabilistic modelling and multiple conceptual models",
+		authors:
+			"Cecile Coulon, Jeremy White, Katie Markovich, Ahmad Askar, Lakin Beal, Savannah Miller, John Sigda, Annelia Tinklenberg, Cynthia Ardito, Matthew Uliana",
+		venue: "Proceedings of the 19th International Conference on Mine Closure (Mine Closure 2026)",
+		doi: "10.36487/ACG_repo/2615_88",
+	},
+	{
+		year: 2025,
+		title: "MF6-ADJ: A Non-Intrusive Adjoint Sensitivity Capability for MODFLOW 6",
+		authors:
+			"Mohamed Hayek, Jeremy T. White, Katherine H. Markovich, Joseph D. Hughes, Marsh Lavenue",
+		venue: "Groundwater, 63(6), 874–888",
+		doi: "10.1111/gwat.70025",
+	},
+	{
+		year: 2025,
+		title:
+			"Reliable Trade-offs Between Environment and Economy: Implications for Mine Dewatering and Managed Aquifer Recharge",
+		authors: "Jeremy White, Cecile Coulon, Rui Hugman, Katherine Markovich",
+		venue: "Mine Water and the Environment, 44(3), 595–607",
+		doi: "10.1007/s10230-025-01070-z",
+	},
+	{
+		year: 2025,
+		title:
+			"Variations in Groundwater Recharge and Water Table Elevations Across the Holocene in a Semi-Arid Alluvial Basin",
+		authors:
+			"Chandler Noyes, Grant Ferguson, Alan Seltzer, Jessica Ng, Kenneth C. Carroll, Rebecca Tyne, Katherine Markovich, Roland Purtschert, Martin Stute, Jeffrey Severinghaus, Jennifer C. McIntosh",
+		venue: "Water Resources Research, 61(8), e2024WR037606",
+		doi: "10.1029/2024WR037606",
+	},
+	{
+		year: 2024,
+		title: "Self-Guided Decision Support Groundwater Modelling with Python",
+		authors:
+			"Rui T. Hugman, Jeremy T. White, Michael N. Fienen, Brioch Hemmings, Katherine H. Markovich",
+		venue: "Journal of Open Source Education, 7(82), 240",
+		doi: "10.21105/jose.00240",
+	},
+	{
+		year: 2024,
+		title:
+			"Jupyter Notebooks for Parameter Estimation, Uncertainty Analysis, and Optimization with PEST++",
+		authors: "Chanse Ford, Wonsook Ha, Katherine Markovich, Johanna Zwinger",
+		venue: "Groundwater, 62(6), 825–829",
+		doi: "10.1111/gwat.13447",
+	},
+	{
+		year: 2022,
+		title:
+			"Sequential and batch data assimilation approaches to cope with groundwater model error: An empirical evaluation",
+		authors: "Katherine H. Markovich, Jeremy T. White, Matthew J. Knowling",
+		venue: "Environmental Modelling & Software, 156, 105498",
+		doi: "10.1016/j.envsoft.2022.105498",
+	},
+	{
+		year: 2021,
+		title:
+			"A Mountain-Front Recharge Component Characterization Approach Combining Groundwater Age Distributions, Noble Gas Thermometry, and Fluid and Energy Transport Modeling",
+		authors:
+			"Katherine H. Markovich, Laura E. Condon, Kenneth C. Carroll, Roland Purtschert, Jennifer C. McIntosh",
+		venue: "Water Resources Research, 57(1), e2020WR027743",
+		doi: "10.1029/2020WR027743",
+	},
+	{
+		year: 2020,
+		title: "Sensitivity of Simulated Mountain Block Hydrology to Subsurface Conceptualization",
+		authors: "Garrett A. Rapp, Laura E. Condon, Katherine H. Markovich",
+		venue: "Water Resources Research, 56(10), e2020WR027714",
+		doi: "10.1029/2020WR027714",
+	},
+	{
+		year: 2020,
+		title: "Where Is the Bottom of a Watershed?",
+		authors:
+			"Laura E. Condon, Katherine H. Markovich, Christa A. Kelleher, Jeffrey J. McDonnell, Grant Ferguson, Jennifer C. McIntosh",
+		venue: "Water Resources Research, 56(3), e2019WR026010",
+		doi: "10.1029/2019WR026010",
+	},
+	{
+		year: 2019,
+		title: "Mountain-Block Recharge: A Review of Current Understanding",
+		authors: "Katherine H. Markovich, Andrew H. Manning, Laura E. Condon, Jennifer C. McIntosh",
+		venue: "Water Resources Research, 55(11), 8278–8304",
+		doi: "10.1029/2019WR025676",
+	},
+	{
+		year: 2019,
+		title:
+			"Bayesian hydrograph separation in a minimally gauged alpine volcanic watershed in central Chile",
+		authors:
+			"Katherine H. Markovich, Helen E. Dahlke, José Luis Arumí, Reed M. Maxwell, Graham E. Fogg",
+		venue: "Journal of Hydrology, 575, 1288–1300",
+		doi: "10.1016/j.jhydrol.2019.06.014",
+	},
+	{
+		year: 2016,
+		title: "Hydrogeological response to climate change in alpine hillslopes",
+		authors: "Katherine H. Markovich, Reed M. Maxwell, Graham E. Fogg",
+		venue: "Hydrological Processes, 30(18), 3126–3138",
+		doi: "10.1002/hyp.10851",
+	},
+];
+
+const years = [...new Set(publications.map((p) => p.year))];
+
+// Split an author string so lab authors can be bolded
+const splitAuthors = (authors: string) =>
+	authors.split(", ").map((name) => ({ name, isLab: labAuthors.includes(name) }));
 ---
 
 <PageLayout meta={meta}>
@@ -68,4 +205,46 @@ const projects = [
 			}
 		</ul>
 	</div>
+	<section class="mx-auto mt-16 max-w-4xl px-4" id="publications">
+		<h2 class="title mb-4">Publications</h2>
+		<p class="text-muted mb-8">
+			Peer-reviewed articles. For a complete list including conference abstracts, see
+			<a class="cactus-link" href={scholarUrl} rel="noreferrer" target="_blank">Google Scholar</a>.
+		</p>
+
+		{
+			years.map((year) => (
+				<section class="mb-10">
+					<h3 class="text-accent mb-4 text-lg font-semibold">{year}</h3>
+					<ul class="flex flex-col gap-5" role="list">
+						{publications
+							.filter((p) => p.year === year)
+							.map((p) => (
+								<li>
+									<p class="font-semibold">
+										<a
+											class="hover:text-accent"
+											href={`https://doi.org/${p.doi}`}
+											rel="noreferrer"
+											target="_blank"
+										>
+											{p.title}
+										</a>
+									</p>
+									<p class="text-muted mt-1 text-sm">
+										{splitAuthors(p.authors).map((a, i) => (
+											<>
+												{i > 0 && ", "}
+												{a.isLab ? <strong class="text-global-text">{a.name}</strong> : a.name}
+											</>
+										))}
+									</p>
+									<p class="text-muted text-sm italic">{p.venue}</p>
+								</li>
+							))}
+					</ul>
+				</section>
+			))
+		}
+	</section>
 </PageLayout>

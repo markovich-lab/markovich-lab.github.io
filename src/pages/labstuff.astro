@@ -2,13 +2,13 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	title: "Resources",
-	description: "Resources for Markovich Lab members",
+	title: "More",
+	description: "Lab manual, consulting, and other information about the Markovich Lab",
 };
 ---
 
 <PageLayout meta={meta}>
-	<h2 class="mb-6 text-2xl font-semibold">Resources</h2>
+	<h1 class="title mb-6">More</h1>
 
 	<ul class="flex flex-col gap-4">
 		<li class="bg-card flex items-center justify-between rounded-lg p-5 shadow-sm">
@@ -22,6 +22,20 @@ const meta = {
 				href="https://markovichlab.org/lab-manual/"
 				target="_blank"
 				rel="noreferrer"
+				class="bg-accent ml-6 inline-flex flex-shrink-0 items-center gap-1.5 rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
+			>
+				View
+			</a>
+		</li>
+		<li class="bg-card flex items-center justify-between rounded-lg p-5 shadow-sm">
+			<div>
+				<h3 class="text-lg font-semibold">Consulting</h3>
+				<p class="text-muted mt-1 text-sm">
+					Independent groundwater modeling consulting through Baseflow Environmental.
+				</p>
+			</div>
+			<a
+				href="/consulting/"
 				class="bg-accent ml-6 inline-flex flex-shrink-0 items-center gap-1.5 rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
 			>
 				View

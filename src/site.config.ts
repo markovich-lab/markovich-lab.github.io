@@ -58,7 +58,7 @@ export const menuLinks: { path: string; title: string }[] = [
 	},
 	{
 		path: "/labstuff/",
-		title: "Resources", //put expectations, policies, and other resources here
+		title: "More", // lab manual, consulting, site info
 	},
 ];
 
