@@ -6,39 +6,23 @@ const meta = {
 	title: "Consulting",
 };
 
-// DRAFT: services inferred from publications and teaching. Edit to match what Baseflow Environmental offers.
-const services = [
-	{
-		title: "Decision-Support Groundwater Modeling",
-		desc: "Development and review of numerical groundwater models (MODFLOW 6, FloPy) designed around the management decisions they need to inform.",
-	},
-	{
-		title: "Uncertainty Quantification & History Matching",
-		desc: "Ensemble-based parameter estimation, data assimilation, and uncertainty analysis with PEST++ and pyEMU.",
-	},
-	{
-		title: "Optimization Under Uncertainty",
-		desc: "Multi-objective optimization for water allocation, mine dewatering, managed aquifer recharge, and remediation planning.",
-	},
-	{
-		title: "Model Review & Training",
-		desc: "Independent peer review of groundwater models, and custom short courses on predictive modeling workflows.",
-	},
+const applications = [
+	"Water supply & allocation optimization",
+	"Managed aquifer recharge & aquifer storage and recovery",
+	"Mine dewatering & closure",
+	"Fate & transport and remedial design & optimization",
+	"Geothermal applications",
 ];
 
-// TODO: add Baseflow Environmental website and contact email
-const contactEmail = "";
-const websiteUrl = "";
+const contactEmail = "kmarkovich@baseflowenv.com";
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-4">Consulting</h1>
 	<div class="prose prose-sm prose-cactus mb-8 max-w-none">
 		<p>
-			Dr. Markovich provides independent groundwater consulting through <strong
-				>Baseflow Environmental</strong
-			>, applying the same decision-support modeling approaches developed in the lab to real-world
-			water resources problems.
+			Dr. Markovich provides independent consulting through <strong>Baseflow Environmental</strong>,
+			offering numerical decision-support modeling and model review for:
 		</p>
 		<p class="text-sm italic">
 			Baseflow Environmental is an independent business and is not affiliated with the University
@@ -46,39 +30,23 @@ const websiteUrl = "";
 		</p>
 	</div>
 
-	<ul class="grid gap-4 sm:grid-cols-2" role="list">
+	<ul class="grid gap-3 sm:grid-cols-2" role="list">
 		{
-			services.map((s) => (
-				<li class="bg-card rounded-lg p-5 shadow-sm">
-					<h3 class="text-lg font-semibold">{s.title}</h3>
-					<p class="text-muted mt-2 text-sm">{s.desc}</p>
+			applications.map((app) => (
+				<li class="bg-card border-accent rounded-lg border-l-4 px-5 py-4 font-semibold shadow-sm">
+					{app}
 				</li>
 			))
 		}
 	</ul>
 
-	{
-		(contactEmail || websiteUrl) && (
-			<div class="mt-8 flex flex-wrap gap-3">
-				{websiteUrl && (
-					<a
-						class="bg-accent inline-flex items-center rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
-						href={websiteUrl}
-						rel="noreferrer"
-						target="_blank"
-					>
-						Visit Baseflow Environmental
-					</a>
-				)}
-				{contactEmail && (
-					<a
-						class="bg-accent inline-flex items-center rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
-						href={`mailto:${contactEmail}`}
-					>
-						Get in touch
-					</a>
-				)}
-			</div>
-		)
-	}
+	<div class="mt-8">
+		<a
+			class="bg-accent inline-flex items-center rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
+			href={`mailto:${contactEmail}`}
+		>
+			Get in touch
+		</a>
+		<p class="text-muted mt-2 text-sm">{contactEmail}</p>
+	</div>
 </PageLayout>
