@@ -15,9 +15,14 @@ const web3formsKey = "d4881714-423d-4d45-85e7-d7acc4afa15b";
 	<h1 class="title mb-4">Consulting</h1>
 	<div class="prose prose-sm prose-cactus max-w-none">
 		<p>
-			I offer independent numerical decision-support modeling and model review for water supply,
-			managed aquifer recharge, mining, remediation, and geothermal projects. Send me a message and
-			let's chat about your needs.
+			Dr. Markovich offers independent numerical decision-support modeling and model review for
+			water supply, managed aquifer recharge, mining, remediation, and geothermal projects.
+		</p>
+		<p>
+			Because her consulting time is limited, she takes on a small number of projects each year and
+			is happiest working on ones that connect to the goals of her research: sustainable groundwater
+			management and science that helps people make better water decisions. If that sounds like a
+			fit, send a message below to start a conversation about your needs.
 		</p>
 	</div>
 
@@ -44,7 +49,7 @@ const web3formsKey = "d4881714-423d-4d45-85e7-d7acc4afa15b";
 					/>
 				</label>
 				<label class="flex flex-col gap-1 text-sm font-semibold">
-					How can I help?
+					How can we help?
 					<textarea
 						class="rounded border border-gray-300 bg-transparent px-3 py-2 font-normal dark:border-gray-600"
 						name="message"
@@ -88,7 +93,7 @@ const web3formsKey = "d4881714-423d-4d45-85e7-d7acc4afa15b";
 			const data = await res.json();
 			if (!data.success) throw new Error(data.message);
 			form.reset();
-			if (status) status.textContent = "Thanks! I'll be in touch soon.";
+			if (status) status.textContent = "Thanks! Your message has been sent, and you'll hear back soon.";
 		} catch {
 			if (status) status.textContent = "Something went wrong. Please try again in a moment.";
 		} finally {
