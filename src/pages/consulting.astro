@@ -2,51 +2,97 @@
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
-	description: "Independent groundwater modeling consulting through Baseflow Environmental",
+	description: "Independent groundwater modeling consulting",
 	title: "Consulting",
 };
 
-const applications = [
-	"Water supply & allocation optimization",
-	"Managed aquifer recharge & aquifer storage and recovery",
-	"Mine dewatering & closure",
-	"Fate & transport and remedial design & optimization",
-	"Geothermal applications",
-];
-
-const contactEmail = "kmarkovich@baseflowenv.com";
+// Web3Forms access key (public by design), registered to kmarkovich@baseflowenv.com;
+// submissions are emailed there.
+const web3formsKey = "d4881714-423d-4d45-85e7-d7acc4afa15b";
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-4">Consulting</h1>
-	<div class="prose prose-sm prose-cactus mb-8 max-w-none">
+	<div class="prose prose-sm prose-cactus max-w-none">
 		<p>
-			Dr. Markovich provides independent consulting through <strong>Baseflow Environmental</strong>,
-			offering numerical decision-support modeling and model review for:
-		</p>
-		<p class="text-sm italic">
-			Baseflow Environmental is an independent business and is not affiliated with the University
-			of New Mexico.
+			I offer independent numerical decision-support modeling and model review for water supply,
+			managed aquifer recharge, mining, remediation, and geothermal projects. Send me a message and
+			let's chat about your needs.
 		</p>
 	</div>
 
-	<ul class="grid gap-3 sm:grid-cols-2" role="list">
-		{
-			applications.map((app) => (
-				<li class="bg-card border-accent rounded-lg border-l-4 px-5 py-4 font-semibold shadow-sm">
-					{app}
-				</li>
-			))
-		}
-	</ul>
+	{
+		web3formsKey ? (
+			<form
+				action="https://api.web3forms.com/submit"
+				class="bg-card mt-6 flex max-w-xl flex-col gap-4 rounded-lg p-5 shadow-sm"
+				id="consulting-form"
+				method="POST"
+			>
+				<input name="access_key" type="hidden" value={web3formsKey} />
+				<input name="subject" type="hidden" value="New consulting inquiry from markovichlab.org" />
+				<input class="hidden" name="botcheck" style="display: none" tabindex="-1" type="checkbox" />
 
-	<div class="mt-8">
-		<a
-			class="bg-accent inline-flex items-center rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90"
-			href={`mailto:${contactEmail}`}
-		>
-			Get in touch
-		</a>
-		<p class="text-muted mt-2 text-sm">{contactEmail}</p>
-	</div>
+				<label class="flex flex-col gap-1 text-sm font-semibold">
+					Your email
+					<input
+						autocomplete="email"
+						class="rounded border border-gray-300 bg-transparent px-3 py-2 font-normal dark:border-gray-600"
+						name="email"
+						required
+						type="email"
+					/>
+				</label>
+				<label class="flex flex-col gap-1 text-sm font-semibold">
+					How can I help?
+					<textarea
+						class="rounded border border-gray-300 bg-transparent px-3 py-2 font-normal dark:border-gray-600"
+						name="message"
+						required
+						rows="6"
+					/>
+				</label>
+				<div class="flex flex-wrap items-center gap-3">
+					<button
+						class="bg-accent inline-flex items-center rounded px-3 py-1.5 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
+						type="submit"
+					>
+						Send
+					</button>
+					<p aria-live="polite" class="text-muted text-sm" id="consulting-form-status" />
+				</div>
+			</form>
+		) : null
+	}
+
+	<p class="text-muted mt-10 text-xs italic">
+		This consulting work is separate from the University of New Mexico.
+	</p>
 </PageLayout>
+
+<script>
+	const form = document.getElementById("consulting-form") as HTMLFormElement | null;
+	const status = document.getElementById("consulting-form-status");
+
+	form?.addEventListener("submit", async (e) => {
+		e.preventDefault();
+		const button = form.querySelector("button");
+		if (button) button.disabled = true;
+		if (status) status.textContent = "Sending…";
+		try {
+			const res = await fetch(form.action, {
+				body: new FormData(form),
+				headers: { Accept: "application/json" },
+				method: "POST",
+			});
+			const data = await res.json();
+			if (!data.success) throw new Error(data.message);
+			form.reset();
+			if (status) status.textContent = "Thanks! I'll be in touch soon.";
+		} catch {
+			if (status) status.textContent = "Something went wrong. Please try again in a moment.";
+		} finally {
+			if (button) button.disabled = false;
+		}
+	});
+</script>
