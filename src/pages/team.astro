@@ -45,7 +45,7 @@ const team = [
 		<ul class="flex flex-col gap-6" role="list">
 			{
 				team.map((m) => (
-					<li class="bg-card flex items-start gap-6 rounded-lg p-6 shadow-sm">
+					<li class="bg-card flex flex-col items-start gap-6 rounded-lg p-6 shadow-sm sm:flex-row">
 						{m.img ? (
 							<img
 								src={m.img}

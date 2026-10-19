@@ -34,7 +34,7 @@ export default defineConfig({
 		webmanifest({
 			// See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md
 			name: siteConfig.title,
-			short_name: "Astro_Cactus", // optional
+			short_name: "Markovich Lab", // optional
 			description: siteConfig.description,
 			lang: siteConfig.lang,
 			icon: "public/icon.svg", // the source for generating favicon & icons
@@ -56,8 +56,8 @@ export default defineConfig({
 				},
 			],
 			start_url: "/",
-			background_color: "#1d1f21",
-			theme_color: "#2bbc8a",
+			background_color: "#fbfbfb",
+			theme_color: "#ba0c2f",
 			display: "standalone",
 			config: {
 				insertFaviconLinks: false,
